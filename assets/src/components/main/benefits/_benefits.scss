@@ -1,0 +1,45 @@
+.benefits {
+  margin-top: 10px;
+  padding: 25px 0 10px;
+  
+  &__wrp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    padding-bottom: 50px;
+  }
+
+  &__img {
+    width: 48px;
+    height: auto;
+  }
+  &__name {
+    font-size: 18px;
+    margin: 14px 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+// /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .benefits {
+    padding: 40px 0 50px;
+    
+    &__wrp {
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+    }
+    &__benefit {
+      padding: 0 30px;
+    }
+  }
+}
