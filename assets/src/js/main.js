@@ -11,3 +11,4 @@ import '../components/main/topbar/topbar';
 import '../components/main/footer/footer';
 // import '../components/main/first-screen/order/order';
 import '../components/main/discounts/discounts';
+import '../components/main/certs/certs';
