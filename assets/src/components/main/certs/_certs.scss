@@ -9,6 +9,10 @@
     padding-bottom: 20px;
     background: #fff;
 
+    .container {
+      padding: 0;
+    }
+
     &__heading {
       font-size: 26px;
       text-align: center;
@@ -29,6 +33,7 @@
     .swiper {
         width: 100%;
         height: inherit;
+        padding: 0 15px;
     }
 
     .swiper-wrapper {
@@ -57,13 +62,16 @@
     padding-top: 70px;
     padding-bottom: 60px;
 
+    .container {
+      padding: 0 15px;
+    }
+    .swiper {
+      padding: 0;
+    }
+
     &__heading {
       text-align: left;
     }
-  }
-
-  container {
-    width: 100%;
   }
 }
 
