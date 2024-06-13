@@ -7,7 +7,7 @@
     // height: 100%;
     padding-top: 50px;
     padding-bottom: 20px;
-    background: #dadada;
+    background: #fff;
 
     &__heading {
       font-size: 26px;
@@ -56,6 +56,10 @@
     margin-right: 15px;
     padding-top: 70px;
     padding-bottom: 60px;
+
+    &__heading {
+      text-align: left;
+    }
   }
 
   container {

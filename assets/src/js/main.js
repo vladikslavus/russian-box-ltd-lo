@@ -12,3 +12,4 @@ import '../components/main/footer/footer';
 // import '../components/main/first-screen/order/order';
 import '../components/main/discounts/discounts';
 import '../components/main/certs/certs';
+import '../components/main/contacts/contacts';

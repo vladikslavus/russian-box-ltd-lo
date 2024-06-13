@@ -6,8 +6,6 @@
   &__heading {
     text-align: center;
     font-size: 26px;
-    font-style: normal;
-    line-height: normal;
     text-transform: uppercase;
     margin-bottom: 24px;
   }
@@ -61,6 +59,10 @@
   .brands {
     padding-bottom: 70px;
 
+    &__heading {
+      text-align: left;
+    }
+
     &__items {
       display: flex;
       justify-content: center;
@@ -86,8 +88,6 @@
 
     &__heading {
       font-size: 50px;
-      padding-left: 150px;
-      padding-right: 150px;
     }
   }
 }

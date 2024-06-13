@@ -1,5 +1,5 @@
-.page__discounts {    margin-top: 0;
-    
+.page__discounts {
+  margin-top: 0;    
 }
 
 .discounts {
@@ -84,6 +84,10 @@
     margin-right: 15px;
     padding-top: 70px;
     padding-bottom: 60px;
+
+    &__heading {
+      text-align: left;
+    }
   }
 
   container {
