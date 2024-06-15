@@ -1,8 +1,8 @@
 const topbar = document.querySelector(".topbar");
 // const topbarTop = document.querySelector(".topbar__top");
 const topbarTop = document.querySelector(".topbar__top");
-const nav = document.querySelector(".topbar__top-rights");
-// const consult = document.querySelector(".topbar__top-consult");
+const nav = document.querySelector(".topbar__rights");
+// const consult = document.querySelector(".topbar__consult");
 const overlay = document.querySelector(".page__overlay");
 // const lgMediaQuery = window.matchMedia("(min-width: 992px)");
 
@@ -28,7 +28,7 @@ menuBtn.addEventListener("click", (e) => {
   e.preventDefault();
   menuBtn.classList.toggle("topbar__hamburger-wrapper--activate");
   menuHamburger.classList.toggle("animate");
-  nav.classList.toggle("topbar__top-rights--active");
+  nav.classList.toggle("topbar__rights--active");
   overlay.classList.toggle("page__overlay--active");
   // content.classList.toggle("content-active");
   document.body.classList.toggle("no-scroll");

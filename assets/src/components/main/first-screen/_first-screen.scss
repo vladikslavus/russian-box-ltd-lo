@@ -2,8 +2,7 @@
 
 // X-Small devices (portrait phones, less than 576px)
 .first-screen {
-  // height: 870px;
-  // background: #f5f5f5;
+  padding-top: 58px;
   padding-bottom: 20px;
 
   &__inner {
@@ -32,6 +31,7 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .first-screen {
+    padding-top: 0;
     background: #fff;
     height: 657px;
 
