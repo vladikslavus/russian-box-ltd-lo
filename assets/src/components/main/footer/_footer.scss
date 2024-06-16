@@ -1,66 +1,87 @@
 // X-Small devices (portrait phones, less than 576px)
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 35px 0;  
-  box-shadow: -1px -1px 14px #333;
-  background: #000;
+  border-top: 1px solid #d7d7d7;
 
-  &__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100%;
-
-    a {
-      margin-right: 20px;
-      color: #fff;      
-      font-size: 16px;
-      font-style: normal;
-      line-height: normal;
-      white-space: nowrap;
-      line-height: 1.8;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: all 0.25s ease-in-out;
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      &:hover {
-        opacity: 0.6;
-        border-bottom: 1px solid #fff;
-      }
-    }
+  &__main {
+    padding-bottom: 20px;
   }
 
-  &__developer {
+  &__logo-img {
+    width: 143px;
+    height: auto;
+  }
+
+  &__logo-text {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &__row {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    padding: 20px 0 5px;
 
-    a {
-      display: block;
-      white-space: nowrap;
-      color: #fff;
-      
-      font-size: 16px;
-      font-style: normal;
-      line-height: normal;
-      white-space: nowrap;
-      line-height: 1.8;
-      text-decoration: none;
-      opacity: 0.5;
+    ul {
+      list-style: none;
+      text-align: center;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        a {
+          font-size: 14px;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }      
+    }    
+  }
+
+  &__caption {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    opacity: .6;
+  }
+  &__val {
+    margin: 0;
+    font-size: 18px;
+    // opacity: .6;
+  }
+  &__email {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    // opacity: 0.6;
+  }
+
+  &__bottoms {
+    width: 100%;
+    background: #f6f6f6;
+  }
+  &__bottoms-wrp {
+    display: flex;
+    flex-direction: column;    
+    padding: 20px 0 10px;
+    
+    p {
+      font-size: 14px;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 10px;
+      opacity: .5;
     }
 
-    a.modal-btn {
-      font-size: 12px;
+    a {
+      font-size: 14px;
       text-decoration: underline;
       cursor: pointer;
     }
@@ -252,75 +273,56 @@
   }
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
   .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    // height: 100px;
-    padding: 35px 0;
     
-    box-shadow: -1px -1px 14px #333;
-    
-
-    &__content {
+    &__main {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      width: 100%;
+    }
+    &__row {
       align-items: flex-start;
-      height: 100%;
 
-      a {
-        margin-right: 20px;
-        color: #fff;
-        
-        font-size: 18px;
-        font-style: normal;
-        line-height: normal;
-        white-space: nowrap;
-        line-height: 1.8;
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition: all 0.25s ease-in-out;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
-        &:hover {
-          opacity: 0.6;
-          border-bottom: 1px solid #fff;
-        }
+      &:nth-child(1), 
+      &:nth-child(2) {
+        width: 40%;
       }
+      &:nth-child(3) {
+        width: 20%;
+      }
+  
+      ul {
+        text-align: left;
+  
+        li {
+          a {
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:hover {
+              color: $color_main_brand;
+            }
+          }
+        }      
+      }    
     }
 
-    &__developer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 15px;
+    &__bottoms-wrp {
+      flex-direction: row;
+      margin: 0;
 
-      a {
-        display: block;
-        white-space: nowrap;
-        color: #fff;
-        
-        font-size: 18px;
-        font-style: normal;
-        line-height: normal;
-        white-space: nowrap;
-        line-height: 1.8;
-        text-decoration: none;
-        opacity: 0.5;
-      }
+      p {
+        text-align-last: left;
 
-      a.modal-btn {
-        font-size: 12px;
-        text-decoration: underline;
-        cursor: pointer;
+        &:nth-child(1), 
+        &:nth-child(2) {
+          width: 40%;
+        }
+        &:nth-child(3) {
+          width: 20%;
+        }
       }
     }
 

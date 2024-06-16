@@ -354,6 +354,13 @@
       align-self: start;
       padding: 15px 30px;
       color: #000;
+      border: 2px solid #eee;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        background: rgba(241,192,18,.6);
+        border: 2px solid #fff;
+      }
     }
   }
 }
